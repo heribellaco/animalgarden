@@ -1,0 +1,226 @@
+ <style>
+         /* || RESET */ 
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }      
+
+            html {
+            font-size: 80%;
+        }
+
+        body {
+            background-color:#124559d6;
+            background-image: radial-gradient(white,#475569);
+            font-size: 2rem;
+            min-height: 100vh;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .garden img{
+        width: 100%;
+        height: auto;
+        }
+
+        .container {
+            padding-top: 30px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+            .coin {
+            background-image:url(../images/coin.png);
+            /* background-color: #55ACEE; */
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: contain;
+            z-index: 1; 
+            margin: 40px;
+            padding: 20px;
+            height: auto;
+            
+            }
+
+            .offscreen {
+                position: absolute;
+                left: -10000px;
+            }
+
+            .coin:hover {
+                background-size: contain;
+                opacity: .8;
+                rotate: 10deg;
+            }
+
+        h1,
+        h2,
+        h3,
+        h4  {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-top: 15px;
+            padding: 0;
+            text-transform: uppercase;
+        
+        }
+
+
+        h1 {
+            margin: 10px 0px 20px;
+            margin-top: -20px;
+            width: 100%;
+            color: firebrick;
+            font-size: 3.5rem;
+            position: absolute;
+            z-index: 1;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 10rem 0 2rem;
+            margin: auto;
+            color: firebrick;
+            font-weight:500;
+            position: relative;
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+
+        h3 {
+            font-weight: 400;
+            margin-top: 120px;
+            position: relative;
+            color: white;
+            width: 100%;
+            font-size: 1.8rem;
+        }
+
+        h4 {
+            font-weight: normal;
+            margin-top: 100px;
+            position: relative;
+            color: white;
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+            img {
+            min-height: 100%;
+            min-width: 1024px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+        }
+
+            
+                @media screen and (min-width: 576px) {
+                    body {
+                    background-color: green;
+                    background-image: radial-gradient(white,green);
+                    font-size: 1rem;
+                    }
+                    
+                }
+                /* || Medium */
+                @media screen and (min-width: 768px) {
+                    body {
+                    background-color: gold;
+                    background-image: radial-gradient(white,gold);
+                    font-size: 1.2rem;
+                    }
+                    h3 {
+                        color: whitesmoke;
+                        margin-top: 80px;
+                    }
+                }
+
+                /* || Large */
+                @media screen and (min-width: 992px) {
+                    body {
+                    background-color: firebrick;
+                    background-image: radial-gradient(white,firebrick);
+                    font-size: 1.5rem;
+                    }
+                }
+                 
+
+                @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+                    body {
+                    background-color: dodgerblue;
+                    background-image: radial-gradient(white,dodgerblue);
+                    }
+                    .container {
+                        height: 100vh;
+                    }
+
+                    h2 {
+                        font-size: 2.6rem;
+                        margin-top: 15px;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                        margin-top: 10px;
+                    }
+                    
+                }
+
+                .button {
+                    display: none;
+                    margin: auto;
+                    position: relative;
+                    width: 130px;
+                    margin-top: 30px;
+
+                }
+        
+            .social {
+
+            margin: auto;
+            position: relative;
+            width: 130px;
+            margin-top: 80px;
+
+            }
+
+                 /* Style all font awesome icons */
+                .fa {
+                  padding: 20px;
+                  font-size: 30px;
+                  width: 60px;
+                  text-align: center;
+                  text-decoration: none;
+                  border-radius: 50%;    
+                }
+
+                /* Add a hover effect if you want */
+                .fa:hover {
+                  opacity: 0.7;
+                }
+
+                /* Set a specific color for each brand */
+
+                /* Facebook */
+                .fa-facebook {
+                  background: #3B5998;
+                  color: white;
+                }
+
+                /* Twitter */
+                .fa-twitter {
+                  background: #55ACEE;
+                  color: white;
+} 
+
+
+      </style>
